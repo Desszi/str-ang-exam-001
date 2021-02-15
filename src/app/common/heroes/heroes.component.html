@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor= "let hero of heroesList">
+            <tr *ngFor= "let hero of heroesList | heroSearch:phraseString:'name'">
                 <td class="text-center"> {{ hero.id }}</td>
                 <td class="text-center"> {{ hero.name }}</td>
                 <td class="text-center"> {{ hero.superPower}}</td>

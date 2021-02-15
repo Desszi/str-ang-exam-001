@@ -7,13 +7,15 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './common/home/home.component';
 import { HeroesComponent } from './common/heroes/heroes.component';
 import { RouterModule } from '@angular/router';
+import { HeroSearchPipe } from './pipes/hero-search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroSearchPipe
   ],
   imports: [
     BrowserModule,
