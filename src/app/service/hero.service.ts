@@ -6,7 +6,7 @@ import { Hero } from '../model/hero';
 })
 export class HeroService {
 
-  heroes: Hero[] = [
+  heroesList: Hero[] = [
     {
       id: 0,
       name: "Superman",
@@ -34,11 +34,11 @@ export class HeroService {
       address: "Kőbánya"
     }
   ]
-  
+
   constructor() { }
 
-  getAll() {
-
+  getAll(): Hero[] {
+      return this.heroesList;
   }
 }
 

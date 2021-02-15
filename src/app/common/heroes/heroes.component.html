@@ -1,1 +1,22 @@
-<p>Hello Hero!</p>
+<h1>Hello Heroes!</h1>
+
+<div class="container mt-3">
+    <table  class="table table-stripped">
+        <thead>
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">NAME</th>
+                <th class="text-center">SUPERPOWER</th>
+                <th class="text-center">ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let hero of heroesList">
+                <td class="text-center"> {{ hero.id }}</td>
+                <td class="text-center"> {{ hero.name }}</td>
+                <td class="text-center"> {{ hero.superPower}}</td>
+                <td class="text-center"> {{ hero.address}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
